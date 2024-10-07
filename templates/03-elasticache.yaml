@@ -76,7 +76,7 @@ Parameters:
       - cache.r6gd.12xlarge
       - cache.r6gd.16xlarge
     ConstraintDescription: Must be a valid Amazon ElastiCache node type.
-    Default: cache.r6g.large
+    Default: cache.r5.xlarge
     Description: ElastiCache cluster node type.
     Type: String
   ElastiCacheSecurityGroup:
