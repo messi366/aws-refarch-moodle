@@ -142,7 +142,7 @@ Parameters:
   DeploymentLocation:
     Description: Templates location (S3 URL). By default, uses AWS provided templates.
     Type: String
-    Default: https://s3.amazonaws.com/aws-refarch/moodle/4.4/templates/new/
+    Default: https://aws-refarch-moodle.s3.amazonaws.com/template/
   PublicAlbAcmCertificate:
     AllowedPattern: ^$|(arn:aws:acm:)([a-z0-9/:-])*([a-z0-9])$
     Description: '[ Optional ] The AWS Certification Manager certificate ARN for the ALB certificate - this certificate should be created in the region you wish to run the ALB and must reference the domain name you use below.'
@@ -343,7 +343,7 @@ Parameters:
     AllowedValues:
       - true
       - false
-    Default: true
+    Default: false
     Description: Indicates whether to use serverless ElastiCache for application.
     Type: String
   ApplicationCacheNodeType:
