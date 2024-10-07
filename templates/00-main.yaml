@@ -142,7 +142,7 @@ Parameters:
   DeploymentLocation:
     Description: Templates location (S3 URL). By default, uses AWS provided templates.
     Type: String
-    Default: https://aws-refarch-moodle.s3.amazonaws.com/template/
+    Default: https://aws-refarch-moodle.s3.ap-southeast-3.amazonaws.com/template/
   PublicAlbAcmCertificate:
     AllowedPattern: ^$|(arn:aws:acm:)([a-z0-9/:-])*([a-z0-9])$
     Description: '[ Optional ] The AWS Certification Manager certificate ARN for the ALB certificate - this certificate should be created in the region you wish to run the ALB and must reference the domain name you use below.'
