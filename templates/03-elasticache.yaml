@@ -7,7 +7,7 @@ Parameters:
     AllowedValues:
       - Redis
       - Memcached
-    Default: Memcached
+    Default: Redis
     Description: Cache engine to use.
     Type: String
   CacheUsageType:
@@ -113,7 +113,7 @@ Resources:
       ReplicationGroupId: !Ref ElastiCacheClusterName
       ReplicationGroupDescription: !Ref ElastiCacheClusterName
       AtRestEncryptionEnabled: true
-      TransitEncryptionEnabled: true
+      TransitEncryptionEnabled: false
       AutoMinorVersionUpgrade: true
       MultiAZEnabled: true
       CacheNodeType: !Ref ElastiCacheNodeType
