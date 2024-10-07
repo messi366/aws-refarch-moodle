@@ -143,7 +143,7 @@ Parameters:
       - c7g.12xlarge
       - c7g.16xlarge
     ConstraintDescription: Must be a valid Amazon EC2 instance type.
-    Default: c7g.xlarge
+    Default: c6g.2xlarge
     Description: The Amazon EC2 instance type for your web instances.
     Type: String
   WebSecurityGroup:
@@ -493,7 +493,7 @@ Resources:
                     mkdir -p /var/www/.opcache
                 fi
                 # Ensure opcache is enabled and add settings recomended by moodle at https://docs.moodle.org/34/en/OPcache
-                sed -i 's/;opcache.file_cache=.*/opcache.file_cache=\/var\/www\/.opcache/' /etc/php.d/10-opcache.ini
+                sed -i 's/;opcache.file_cache=.*/opcache.file_cache=\/tmp\/' /etc/php.d/10-opcache.ini
                 sed -i 's/opcache.memory_consumption=.*/opcache.memory_consumption=512/' /etc/php.d/10-opcache.ini
                 sed -i 's/opcache.max_accelerated_files=.*/opcache.max_accelerated_files=8000/' /etc/php.d/10-opcache.ini
                 sed -i 's/;opcache.revalidate_freq=.*/opcache.revalidate_freq=300/' /etc/php.d/10-opcache.ini
