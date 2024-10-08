@@ -143,7 +143,7 @@ Parameters:
       - c7g.12xlarge
       - c7g.16xlarge
     ConstraintDescription: Must be a valid Amazon EC2 instance type.
-    Default: c6g.2xlarge
+    Default: c6g.xlarge
     Description: The Amazon EC2 instance type for your web instances.
     Type: String
   WebSecurityGroup:

@@ -329,7 +329,7 @@ Parameters:
       - cache.r6gd.12xlarge
       - cache.r6gd.16xlarge
     ConstraintDescription: Must be a valid Amazon ElastiCache node type.
-    Default: cache.r6g.large
+    Default: cache.r5.xlarge
     Description: The Amazon ElastiCache cluster node type.
     Type: String
   UseApplicationCacheBoolean:
@@ -528,7 +528,7 @@ Parameters:
       - c7g.12xlarge
       - c7g.16xlarge
     ConstraintDescription: Must be a valid Amazon EC2 instance type.
-    Default: c7g.xlarge
+    Default: c6g.xlarge
     Description: The Amazon EC2 instance type for your web instances.
     Type: String
   HostedZoneName:
